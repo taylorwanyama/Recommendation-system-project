@@ -35,7 +35,7 @@ This system employs several key components to deliver effective recommendations:
     * **Benefit:** Ensures the data is clean and in the right format for the machine learning model.
 
 * **4. Content-Based Recommendation Engine:**
-    * **How:** I analyzesd the *description and type* (content) of products. Using techniques like TF-IDF (Term Frequency-Inverse Document Frequency) and Cosine Similarity, I measured how "similar" different products are based on their features.
+    * **How:** I analyzed the *description and type* (content) of products. Using techniques like TF-IDF (Term Frequency-Inverse Document Frequency) and Cosine Similarity, I measured how "similar" different products are based on their features.
     * **Benefit:** Recommends products that share similar characteristics to what a user is looking for.
 
 * **5. Hybrid Recommendation Logic:**
