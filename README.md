@@ -4,7 +4,7 @@
 
 This project is all about making online shopping easier and more personalized. Imagine a huge store like Kilimall, with thousands of products. How do you find exactly what you're looking for, or discover new items you might love?
 
-That's where this system comes in. It's a **recommendation engine** built specifically for beauty and health products. By understanding product details like names, categories, and reviews, it suggests personalized items, making the shopping experience smoother and more engaging for users.
+That's where this system comes in. It's a **recommendation system** built specifically for beauty and health products. By understanding product details like names, rating, categories,sub-categories and customer reviews, it suggests personalized items, making the shopping experience smoother and more engaging for users.
 
 **Key achievements of this project include:**
 * **Mastering Web Scraping:** Successfully gathering product information from a dynamic e-commerce website.
@@ -31,7 +31,7 @@ This system employs several key components to deliver effective recommendations:
     * 
 
 * **3. Robust Data Preparation:**
-    * **How:** Before building the recommendation engine, I processed the data by handling any missing information, converting text (like "KSh 999") into usable numbers, and standardizing numerical values using **RegX**.
+    * **How:** Before building the recommendation system, I processed the data by handling any missing information, converting text (like "KSh 999") into usable numbers, and standardizing numerical values using **RegX**.
     * **Benefit:** Ensures the data is clean and in the right format for the machine learning model.
 
 * **4. Content-Based Recommendation Engine:**
@@ -55,7 +55,11 @@ This system employs several key components to deliver effective recommendations:
 * **Machine Learning (Scikit-learn):** `TfidfVectorizer`, `cosine_similarity`, `MinMaxScaler`
 * **Other:** `time`, `random`, `os`, `re`
 
-## 📂 Project Structure
+## 📂Files
+- `data.py`: The script for scraping data and performing initial cleaning.
+- `model.ipynb`: The main Jupyter Notebook where data is prepared, the recommendation engine is built, and recommendations are generated.
+- `kilimall_beauty_health_products_scraped.csv`: Raw scraped product data.
+- `unique_category_sub_category_combinations.csv`: A list of all clean and unique category/sub-category pairs, useful for input.
 
 
 ## 🚀 Getting Started
