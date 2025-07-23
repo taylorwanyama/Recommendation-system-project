@@ -25,7 +25,7 @@ This system employs several key components to deliver effective recommendations:
     * **How:** I used powerful tools (`requests`, `BeautifulSoup`, and `Selenium`) to collect product data from Kilimall. This setup is specifically designed to handle websites that load content dynamically, ensuring I capture all necessary details.
     * **Benefit:** Gathered a rich dataset of products including names, prices, ratings, categories, sub-categories and customer reviews.
 
-**2. Data Refinement (Crucial Step!):**
+* **2. Data Refinement (Crucial Step!):**
     * **How:** Real-world category data can be inconsistent. I have built a custom function that uses keywords in product names to accurately clean and map vague or inconsistent categories (e.g., ensuring a "men's hair clipper" is correctly classified under "Men's Grooming" even if initially listed broadly).
     * **Benefit:** Helps in  Transforming raw, messy, data that was scraped into highly precise and usable categories, which is vital for accurate recommendations.
     * 
@@ -56,3 +56,83 @@ This system employs several key components to deliver effective recommendations:
 * **Other:** `time`, `random`, `os`, `re`
 
 ## 📂 Project Structure
+## 🚀 Getting Started
+
+Follow these steps to set up and run the project on your machine:
+
+1.  **Clone the Repository:**
+    ```bash
+    git clone [https://github.com/taylorwanyama/Recommendation-system-project.git](https://github.com/taylorwanyama/Recommendation-system-project.git)
+    cd Recommendation-system-project
+    ```
+
+2.  **Install Required Libraries:**
+    Ensure you have all the necessary Python libraries installed. If you have a `requirements.txt` file (which you can generate using `pip freeze > requirements.txt` after manually installing them once), run:
+    ```bash
+    pip install -r requirements.txt
+    ```
+    Otherwise, install them manually:
+    ```bash
+    pip install pandas numpy requests beautifulsoup4 selenium scikit-learn nltk
+    ```
+
+4.  **Install Chrome WebDriver:**
+    The `data.py` script requires `chromedriver` to interact with the Chrome browser.
+    * **Download:** Get the `chromedriver` version that matches your installed Chrome browser from [https://chromedriver.chromium.org/downloads](https://chromedriver.chromium.org/downloads).
+    * **Placement:** Place the downloaded `chromedriver.exe` (or `chromedriver`) file in your project directory, or in a directory that is part of your system's PATH.
+
+5.  **Download NLTK Data:**
+    The `model.ipynb` uses NLTK resources for text processing. Run these commands once in your Python environment:
+    ```python
+    import nltk
+    nltk.download('stopwords')
+    nltk.download('wordnet')
+    nltk.download('omw-1.4')
+    ```
+
+## ▶️ How to Use the Recommendation System
+
+1.  **Run the Data Scraper (Optional - if `kilimall_beauty_health_products_scraped.csv` doesn't exist or needs updating):**
+    * Open your terminal or command prompt in the project folder.
+    * Execute the `data.py` script:
+        ```bash
+        python data.py
+        ```
+    * This will scrape data, perform initial cleaning, and save it to `kilimall_beauty_health_products_scraped.csv`.
+
+2.  **Launch the Recommendation Notebook:**
+    * Start Jupyter Notebook from your project directory:
+        ```bash
+        jupyter notebook
+        ```
+    * In the Jupyter interface, open `model.ipynb`.
+    * **Execute all cells sequentially** from top to bottom.
+    * **Interactive Input:** When prompted, enter a `Category` and `Sub_Category` (e.g., `Beauty` and `Fragrance`) to receive recommendations. You can refer to `unique_category_sub_category_combinations.csv` for valid combinations.
+
+## Data Source
+
+The dataset for this project was diligently scraped from the "Beauty & Health" section of [Kilimall.co.ke](https://www.kilimall.co.ke/).
+
+##  What I Learned & What Makes This Project Stand Out
+
+This project was a deep dive into practical data science, offering insights into:
+
+* **Real-world Web Data:** Gaining hands-on experience with challenges like dynamic content and anti-scraping measures.
+* **The Power of Clean Data:** Realizing how crucial robust data cleaning (especially my custom category refinement) is for any successful machine learning project. Garbage in, garbage out!
+* **Building a Smart Recommender:** Understanding how content similarity can be leveraged to provide truly personalized product suggestions.
+* **Hybrid Approach Benefits:** Seeing how combining content analysis with simple filtering (by category) can yield highly relevant results for users.
+
+## 📈 Future Enhancements
+
+I envision several ways to expand and improve this system:
+
+* **User Behavior Integration:** Incorporating actual user purchase history or viewing patterns to build a more advanced hybrid system (e.g., collaborative filtering).
+* **Deployment:** Turning the recommendation engine into a deployable service (e.g., a simple API) for real-time recommendations.
+* **Performance Metrics:** Implementing quantitative metrics to rigorously evaluate recommendation quality (e.g., precision, recall, diversity).
+* **Scalability:** Optimizing the scraping and processing pipelines for even larger datasets and faster performance.
+
+## Author
+
+**[Taylor Wanyama]**
+* [Your LinkedIn Profile](https://www.linkedin.com/in/your-linkedin-profile-url/)
+
