@@ -7,7 +7,7 @@ This project is all about making online shopping easier and more personalized. I
 That's where this system comes in. It's a **recommendation engine** built specifically for beauty and health products. By understanding product details like names, categories, and reviews, it suggests personalized items, making the shopping experience smoother and more engaging for users.
 
 **Key achievements of this project include:**
-* **Mastering Web Data:** Successfully gathering product information from a dynamic e-commerce website.
+* **Mastering Web Scraping:** Successfully gathering product information from a dynamic e-commerce website.
 * **Data Cleaning:** Transforming messy, real-world data into a clean, usable format.
 * **Building a Content-based Recommendation system :** Creating a system that recommends products based on user input.
 
@@ -56,11 +56,7 @@ This system employs several key components to deliver effective recommendations:
 * **Other:** `time`, `random`, `os`, `re`
 
 ## 📂 Project Structure
-├── data.py                       # The script for scraping data and performing initial  cleaning.
-├── kilimall_beauty_health_products_scraped.csv # The raw product data collected by data.py.
-├── model.ipynb                   # The main Jupyter Notebook where data is prepared, the recommendation engine is built, and recommendations are generated.
-├── unique_category_sub_category_combinations.csv # A list of all clean and unique category/sub-category pairs, useful for input.
-└── README.md                     # This file.
+
 
 ## 🚀 Getting Started
 
