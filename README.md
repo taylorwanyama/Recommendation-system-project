@@ -56,6 +56,12 @@ This system employs several key components to deliver effective recommendations:
 * **Other:** `time`, `random`, `os`, `re`
 
 ## 📂 Project Structure
+├── data.py                       # The script for scraping data and performing initial  cleaning.
+├── kilimall_beauty_health_products_scraped.csv # The raw product data collected by data.py.
+├── model.ipynb                   # The main Jupyter Notebook where data is prepared, the recommendation engine is built, and recommendations are generated.
+├── unique_category_sub_category_combinations.csv # A list of all clean and unique category/sub-category pairs, useful for input.
+└── README.md                     # This file.
+
 ## 🚀 Getting Started
 
 Follow these steps to set up and run the project on your machine:
@@ -134,5 +140,6 @@ I envision several ways to expand and improve this system:
 ## Author
 
 **[Taylor Wanyama]**
-* [Your LinkedIn Profile](https://www.linkedin.com/in/your-linkedin-profile-url/)
+* [Your LinkedIn Profile]((https://www.linkedin.com/in/taylor-wanyama-421920271/))
+
 
