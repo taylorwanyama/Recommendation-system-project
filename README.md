@@ -139,7 +139,7 @@ I envision several ways to expand and improve this system:
 
 ## Author
 
-**[Taylor Wanyama]**
-**([https://www.linkedin.com/in/your-linkedin-profile-url/](https://www.linkedin.com/in/taylor-wanyama-421920271/))**
+**Taylor Wanyama**  
+[LinkedIn Profile](https://www.linkedin.com/in/taylor-wanyama-421920271/)
 
 
